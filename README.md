@@ -3,6 +3,10 @@ SwiftAppMenuController
 
 ![demo](https://imageshack.com/a/img633/7603/UdASmR.gif)
 
+## Importing
+
+import SwiftAppMenuController.swift to your project
+
 ## How To Use
 
 In your **AppDelegate.swift** add:
