@@ -12,10 +12,23 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
                             
     var window: UIWindow?
-
+    var backWindow: UIWindow?
 
     func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
-        // Override point for customization after application launch.
+        
+        var str:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        var _back:BackViewController = str.instantiateViewControllerWithIdentifier("back") as BackViewController
+        
+        self.backWindow = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.backWindow!.rootViewController = _back
+        backWindow?.makeKeyAndVisible()
+        
+        var _front:SwiftAppMenuController = str.instantiateViewControllerWithIdentifier("front") as SwiftAppMenuController
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window!.rootViewController = _front
+        self.window!.makeKeyAndVisible()
+        
         return true
     }
 

@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		8048C07019899C0C00814470 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8048C06F19899C0C00814470 /* AppDelegate.swift */; };
-		8048C07219899C0C00814470 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8048C07119899C0C00814470 /* ViewController.swift */; };
 		8048C07519899C0C00814470 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8048C07319899C0C00814470 /* Main.storyboard */; };
 		8048C07719899C0C00814470 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8048C07619899C0C00814470 /* Images.xcassets */; };
 		8048C08319899C0C00814470 /* SwiftAppMenuControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8048C08219899C0C00814470 /* SwiftAppMenuControllerTests.swift */; };
+		8048C08F19899CEE00814470 /* BackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8048C08E19899CEE00814470 /* BackViewController.swift */; };
+		8048C09119899CFE00814470 /* FrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8048C09019899CFE00814470 /* FrontViewController.swift */; };
+		8048C0951989A01E00814470 /* SwiftAppMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8048C0941989A01E00814470 /* SwiftAppMenuController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,12 +30,14 @@
 		8048C06A19899C0C00814470 /* SwiftAppMenuController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAppMenuController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8048C06E19899C0C00814470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8048C06F19899C0C00814470 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8048C07119899C0C00814470 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8048C07419899C0C00814470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8048C07619899C0C00814470 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8048C07C19899C0C00814470 /* SwiftAppMenuControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftAppMenuControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8048C08119899C0C00814470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8048C08219899C0C00814470 /* SwiftAppMenuControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAppMenuControllerTests.swift; sourceTree = "<group>"; };
+		8048C08E19899CEE00814470 /* BackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackViewController.swift; sourceTree = "<group>"; };
+		8048C09019899CFE00814470 /* FrontViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontViewController.swift; sourceTree = "<group>"; };
+		8048C0941989A01E00814470 /* SwiftAppMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftAppMenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +79,10 @@
 		8048C06C19899C0C00814470 /* SwiftAppMenuController */ = {
 			isa = PBXGroup;
 			children = (
+				8048C0941989A01E00814470 /* SwiftAppMenuController.swift */,
 				8048C06F19899C0C00814470 /* AppDelegate.swift */,
-				8048C07119899C0C00814470 /* ViewController.swift */,
+				8048C08E19899CEE00814470 /* BackViewController.swift */,
+				8048C09019899CFE00814470 /* FrontViewController.swift */,
 				8048C07319899C0C00814470 /* Main.storyboard */,
 				8048C07619899C0C00814470 /* Images.xcassets */,
 				8048C06D19899C0C00814470 /* Supporting Files */,
@@ -208,8 +214,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8048C07219899C0C00814470 /* ViewController.swift in Sources */,
+				8048C09119899CFE00814470 /* FrontViewController.swift in Sources */,
 				8048C07019899C0C00814470 /* AppDelegate.swift in Sources */,
+				8048C0951989A01E00814470 /* SwiftAppMenuController.swift in Sources */,
+				8048C08F19899CEE00814470 /* BackViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
