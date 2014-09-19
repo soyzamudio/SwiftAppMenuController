@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-var kHeaderHeight = 120
+let kHeaderHeight : CGFloat = 120
 
 var newDelegate = AppDelegate()
 var window = UIWindow()
