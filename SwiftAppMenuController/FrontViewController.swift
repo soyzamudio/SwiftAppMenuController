@@ -17,7 +17,7 @@ class FrontViewController: UIViewController {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor.blueColor()
-        self.navigationController.navigationBar.translucent = false
+        self.navigationController?.navigationBar.translucent = false
         self.title = "SwiftAppMenuController"
 
         var rightItem: UIBarButtonItem = UIBarButtonItem()
