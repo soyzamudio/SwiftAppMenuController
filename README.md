@@ -11,7 +11,7 @@ import SwiftAppMenuController.swift to your project
 
 In your **AppDelegate.swift** add:
 
-```
+```swift
 var window: UIWindow?
 var backWindow: UIWindow?
 
@@ -36,20 +36,20 @@ var backWindow: UIWindow?
 
 In your **FrontViewController.swift** declare the following property:
 
-```
+```swift
 var navController = SwiftAppMenuController()
 ```
 
 and add the following to your `viewDidLoad()`
 
-```
+```swift
 navController = self.navigationController as SwiftAppMenuController
 navController.setNavigationBarHidden(false, animated: false)
 ```
 
 and add the following function:
 
-```
+```swift
 func menuPressed() -> Void {
   navController.openAndCloseMenu()
 }
